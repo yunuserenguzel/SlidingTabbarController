@@ -1,24 +1,38 @@
 //
 //  ViewController.swift
-//  SlidingTabbarController
+//  SlidingTabbarExample
 //
-//  Created by Yunus Eren Guzel on 02/27/2016.
-//  Copyright (c) 2016 Yunus Eren Guzel. All rights reserved.
+//  Created by Yunus Eren Guzel on 18/02/16.
+//  Copyright © 2016 yeg. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+  let imageView = UIImageView()
+  
+  convenience init(imageName: String) {
+    self.init()
+    imageView.image = UIImage(named: imageName)
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    imageView.contentMode = .ScaleAspectFill
+    view.addSubview(imageView)
+  }
+  
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    imageView.frame = view.bounds
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+
 
 }
 

@@ -1,0 +1,6 @@
+framework module SlidingTabbarController {
+  umbrella header "SlidingTabbarController-umbrella.h"
+
+  export *
+  module * { export * }
+}

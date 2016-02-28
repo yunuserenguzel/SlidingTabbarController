@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F0AE20C673F6F7615A61207142C2EC2 /* Pods-SlidingTabbarController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F33E929081910D063DA9107CAC916E4D /* Pods-SlidingTabbarController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32B6A9B4A526FF4EB64E5C6EB97E90C5 /* Pods-SlidingTabbarController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF40AF2125A383CC8393046783DCD6B4 /* Pods-SlidingTabbarController_Example-dummy.m */; };
+		4A2EFEBF2CD674C291E91F326BF127A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		864FA108A311EBB0B8BD86274EC8D88C /* Pods-SlidingTabbarController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 983F33E09D8BB7C4CC21C0E8D194BD62 /* Pods-SlidingTabbarController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D6101C9115EF96DFB9B3AC5459477AA /* SlidingTabbarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FD43454FC7D8532F9AD66F70663557 /* SlidingTabbarController-dummy.m */; };
+		A03DF8E70736C2F80AE3BAFDE02BD2D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		A62A8BA1938636E7FCF2BD6B2B83E555 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		AEAE74ED1C819FF100E4E94C /* SlidingTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE74E31C819E1600E4E94C /* SlidingTabbarController.swift */; };
+		AEAE74EE1C819FF600E4E94C /* SlidingTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE74E51C819E5000E4E94C /* SlidingTabbar.swift */; };
+		AEAE74EF1C819FF800E4E94C /* SlidingTabbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE74E71C819E7800E4E94C /* SlidingTabbarItemView.swift */; };
+		AEAE74F11C81A0BE00E4E94C /* SlidingTabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE74F01C81A0BE00E4E94C /* SlidingTabbarItem.swift */; };
+		B22C19DD44DFA6298B634B29F96FCCE0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5904DCF89FB7B9EBE24E5FCA1B4ADA8 /* ReplaceMe.swift */; };
+		BFA514AFCD55DA27ABB68A06F83751C0 /* SlidingTabbarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76BD36D324B0370213B4188D683B464F /* SlidingTabbarController.bundle */; };
+		E56872A9D2DC167A9AD4B0193F4EB1E0 /* Pods-SlidingTabbarController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3C32591F143BB588B3984FED7583A6 /* Pods-SlidingTabbarController_Tests-dummy.m */; };
+		F6B192B78A1404D582E86C4F1B6688CE /* SlidingTabbarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D331F730372202F8A3B873CF22F4CBAA /* SlidingTabbarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0433932120A44F2314331E7EACE71AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94B9D5C0BF78B57EB7536F4EF0F0ACAE;
+			remoteInfo = SlidingTabbarController;
+		};
+		3875B78C521882A964F5D33653602C3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 908B94CDF2D512089C21180B796720A9;
+			remoteInfo = "SlidingTabbarController-SlidingTabbarController";
+		};
+		F1B8CDC918958A0721A53DFF0164BA5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94B9D5C0BF78B57EB7536F4EF0F0ACAE;
+			remoteInfo = SlidingTabbarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085E4ECB75D8CB6AB7EF8E809276B851 /* Pods-SlidingTabbarController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlidingTabbarController_Tests-resources.sh"; sourceTree = "<group>"; };
+		1C45F65269F1CD20684A5DFC0CF1587D /* Pods-SlidingTabbarController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlidingTabbarController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		29B9BA2E1A033E79AF1480EF4B0A6A2E /* Pods-SlidingTabbarController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlidingTabbarController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		39AAF79B182AC4B02E07157968F6C593 /* Pods_SlidingTabbarController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlidingTabbarController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4543308B998CDF19B9DE3A4BB37122D8 /* Pods-SlidingTabbarController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlidingTabbarController_Example-resources.sh"; sourceTree = "<group>"; };
+		5C603545362F6E85AC0C023B340A60E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		682FB70E3D2A6A027FF21094C204780A /* Pods-SlidingTabbarController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SlidingTabbarController_Tests.modulemap"; sourceTree = "<group>"; };
+		6F9A5216865E97206BE8785BD2546C04 /* Pods-SlidingTabbarController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlidingTabbarController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		73EDA4D0D23A8BF5D0497CE580647E1B /* Pods-SlidingTabbarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlidingTabbarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		76BD36D324B0370213B4188D683B464F /* SlidingTabbarController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlidingTabbarController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		78FD61D699132AADF7BF05A5052D210B /* SlidingTabbarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlidingTabbarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799577F31DDF9A6FCEFC7833812D87FA /* Pods-SlidingTabbarController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlidingTabbarController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		84F394190965D9C59A9065C5E3B12631 /* Pods-SlidingTabbarController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlidingTabbarController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8E333903DADD3276CFE2BDB13B530896 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983F33E09D8BB7C4CC21C0E8D194BD62 /* Pods-SlidingTabbarController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlidingTabbarController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A5B7AF7808B094492CB7D7810F0A2718 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEAE74E31C819E1600E4E94C /* SlidingTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingTabbarController.swift; sourceTree = "<group>"; };
+		AEAE74E51C819E5000E4E94C /* SlidingTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingTabbar.swift; sourceTree = "<group>"; };
+		AEAE74E71C819E7800E4E94C /* SlidingTabbarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingTabbarItemView.swift; sourceTree = "<group>"; };
+		AEAE74F01C81A0BE00E4E94C /* SlidingTabbarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingTabbarItem.swift; sourceTree = "<group>"; };
+		B038C4D330664305818F57DCAA56E19A /* Pods-SlidingTabbarController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SlidingTabbarController_Example.modulemap"; sourceTree = "<group>"; };
+		B238EC67C05E124CBF889F76069C2649 /* Pods-SlidingTabbarController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SlidingTabbarController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BADCDF3B5C9C09E535EB1592751A694E /* Pods-SlidingTabbarController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlidingTabbarController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C1FD43454FC7D8532F9AD66F70663557 /* SlidingTabbarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlidingTabbarController-dummy.m"; sourceTree = "<group>"; };
+		C266CB2D6755113B001892BF1D30CCDD /* Pods_SlidingTabbarController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlidingTabbarController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C8333E89283AC1653F6A5834E6C1B8 /* Pods-SlidingTabbarController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlidingTabbarController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D25C7062013F8724EDA3597EECE34FDD /* SlidingTabbarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlidingTabbarController-prefix.pch"; sourceTree = "<group>"; };
+		D331F730372202F8A3B873CF22F4CBAA /* SlidingTabbarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlidingTabbarController-umbrella.h"; sourceTree = "<group>"; };
+		D558331CCC9F84483C9AF07ECDDE2AFB /* SlidingTabbarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SlidingTabbarController.modulemap; sourceTree = "<group>"; };
+		DE3C32591F143BB588B3984FED7583A6 /* Pods-SlidingTabbarController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlidingTabbarController_Tests-dummy.m"; sourceTree = "<group>"; };
+		E5904DCF89FB7B9EBE24E5FCA1B4ADA8 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		EE1E63F743980EDBBD00240BEB9EB0EF /* SlidingTabbarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlidingTabbarController.xcconfig; sourceTree = "<group>"; };
+		EF40AF2125A383CC8393046783DCD6B4 /* Pods-SlidingTabbarController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlidingTabbarController_Example-dummy.m"; sourceTree = "<group>"; };
+		F33E929081910D063DA9107CAC916E4D /* Pods-SlidingTabbarController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlidingTabbarController_Example-umbrella.h"; sourceTree = "<group>"; };
+		FE066F5EED4FF9F7839250DE219501C9 /* Pods-SlidingTabbarController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SlidingTabbarController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A3B2D67C85B108640BDBADCB2CEF7FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2EFEBF2CD674C291E91F326BF127A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41963375148C4919BC8C780D0FC82FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0D6CBFEA835260C8C6C95110F15AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62A8BA1938636E7FCF2BD6B2B83E555 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F358BD55614AC2240A3261A44431C2EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03DF8E70736C2F80AE3BAFDE02BD2D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B5EAEDAE8D34C8B741878B509107791 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD556B928159900FF4BB39695C6CCE /* Pods-SlidingTabbarController_Example */,
+				710EA370EB14EA95BA023BBD930FD3F3 /* Pods-SlidingTabbarController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2EDEEFE56499E1AE5269B2865B7FFC92 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E333903DADD3276CFE2BDB13B530896 /* Info.plist */,
+				D558331CCC9F84483C9AF07ECDDE2AFB /* SlidingTabbarController.modulemap */,
+				EE1E63F743980EDBBD00240BEB9EB0EF /* SlidingTabbarController.xcconfig */,
+				C1FD43454FC7D8532F9AD66F70663557 /* SlidingTabbarController-dummy.m */,
+				D25C7062013F8724EDA3597EECE34FDD /* SlidingTabbarController-prefix.pch */,
+				D331F730372202F8A3B873CF22F4CBAA /* SlidingTabbarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SlidingTabbarController";
+			sourceTree = "<group>";
+		};
+		39438CD10B72BBC8C6FC486441FC160E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C266CB2D6755113B001892BF1D30CCDD /* Pods_SlidingTabbarController_Example.framework */,
+				39AAF79B182AC4B02E07157968F6C593 /* Pods_SlidingTabbarController_Tests.framework */,
+				76BD36D324B0370213B4188D683B464F /* SlidingTabbarController.bundle */,
+				78FD61D699132AADF7BF05A5052D210B /* SlidingTabbarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		466F56C495888F25D2293C273C85EBB5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B36B34A1F5B16C9E076BA166F5F586F1 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		710EA370EB14EA95BA023BBD930FD3F3 /* Pods-SlidingTabbarController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5C603545362F6E85AC0C023B340A60E5 /* Info.plist */,
+				682FB70E3D2A6A027FF21094C204780A /* Pods-SlidingTabbarController_Tests.modulemap */,
+				B238EC67C05E124CBF889F76069C2649 /* Pods-SlidingTabbarController_Tests-acknowledgements.markdown */,
+				C9C8333E89283AC1653F6A5834E6C1B8 /* Pods-SlidingTabbarController_Tests-acknowledgements.plist */,
+				DE3C32591F143BB588B3984FED7583A6 /* Pods-SlidingTabbarController_Tests-dummy.m */,
+				BADCDF3B5C9C09E535EB1592751A694E /* Pods-SlidingTabbarController_Tests-frameworks.sh */,
+				085E4ECB75D8CB6AB7EF8E809276B851 /* Pods-SlidingTabbarController_Tests-resources.sh */,
+				983F33E09D8BB7C4CC21C0E8D194BD62 /* Pods-SlidingTabbarController_Tests-umbrella.h */,
+				6F9A5216865E97206BE8785BD2546C04 /* Pods-SlidingTabbarController_Tests.debug.xcconfig */,
+				1C45F65269F1CD20684A5DFC0CF1587D /* Pods-SlidingTabbarController_Tests.release.xcconfig */,
+			);
+			name = "Pods-SlidingTabbarController_Tests";
+			path = "Target Support Files/Pods-SlidingTabbarController_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				80C58504692A24208DE008450DE1D83E /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				39438CD10B72BBC8C6FC486441FC160E /* Products */,
+				0B5EAEDAE8D34C8B741878B509107791 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80C58504692A24208DE008450DE1D83E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				858810811B923538B61FC2FB5FDF1011 /* SlidingTabbarController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		858810811B923538B61FC2FB5FDF1011 /* SlidingTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				466F56C495888F25D2293C273C85EBB5 /* Pod */,
+				2EDEEFE56499E1AE5269B2865B7FFC92 /* Support Files */,
+			);
+			name = SlidingTabbarController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B36B34A1F5B16C9E076BA166F5F586F1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E5904DCF89FB7B9EBE24E5FCA1B4ADA8 /* ReplaceMe.swift */,
+				AEAE74F01C81A0BE00E4E94C /* SlidingTabbarItem.swift */,
+				AEAE74E31C819E1600E4E94C /* SlidingTabbarController.swift */,
+				AEAE74E51C819E5000E4E94C /* SlidingTabbar.swift */,
+				AEAE74E71C819E7800E4E94C /* SlidingTabbarItemView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D2DD556B928159900FF4BB39695C6CCE /* Pods-SlidingTabbarController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A5B7AF7808B094492CB7D7810F0A2718 /* Info.plist */,
+				B038C4D330664305818F57DCAA56E19A /* Pods-SlidingTabbarController_Example.modulemap */,
+				FE066F5EED4FF9F7839250DE219501C9 /* Pods-SlidingTabbarController_Example-acknowledgements.markdown */,
+				799577F31DDF9A6FCEFC7833812D87FA /* Pods-SlidingTabbarController_Example-acknowledgements.plist */,
+				EF40AF2125A383CC8393046783DCD6B4 /* Pods-SlidingTabbarController_Example-dummy.m */,
+				29B9BA2E1A033E79AF1480EF4B0A6A2E /* Pods-SlidingTabbarController_Example-frameworks.sh */,
+				4543308B998CDF19B9DE3A4BB37122D8 /* Pods-SlidingTabbarController_Example-resources.sh */,
+				F33E929081910D063DA9107CAC916E4D /* Pods-SlidingTabbarController_Example-umbrella.h */,
+				73EDA4D0D23A8BF5D0497CE580647E1B /* Pods-SlidingTabbarController_Example.debug.xcconfig */,
+				84F394190965D9C59A9065C5E3B12631 /* Pods-SlidingTabbarController_Example.release.xcconfig */,
+			);
+			name = "Pods-SlidingTabbarController_Example";
+			path = "Target Support Files/Pods-SlidingTabbarController_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7380ADBE7ED8745B3D37CBD1D757D5E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864FA108A311EBB0B8BD86274EC8D88C /* Pods-SlidingTabbarController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA7D2398AB08FFF4668AD48B44FB6A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B192B78A1404D582E86C4F1B6688CE /* SlidingTabbarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1EAFCCC3F6F24468665BA32012B119 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0AE20C673F6F7615A61207142C2EC2 /* Pods-SlidingTabbarController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		908B94CDF2D512089C21180B796720A9 /* SlidingTabbarController-SlidingTabbarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E46088ED0E806B5F030500DDE9144A /* Build configuration list for PBXNativeTarget "SlidingTabbarController-SlidingTabbarController" */;
+			buildPhases = (
+				6DD02AF59E4477B077A75FAE2195661E /* Sources */,
+				41963375148C4919BC8C780D0FC82FE8 /* Frameworks */,
+				D6AFC8B7E348D3F08BDCBB29BF28F6A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SlidingTabbarController-SlidingTabbarController";
+			productName = "SlidingTabbarController-SlidingTabbarController";
+			productReference = 76BD36D324B0370213B4188D683B464F /* SlidingTabbarController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		94B9D5C0BF78B57EB7536F4EF0F0ACAE /* SlidingTabbarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A99ED99B489A958E0931AA7B84FF252 /* Build configuration list for PBXNativeTarget "SlidingTabbarController" */;
+			buildPhases = (
+				D85A5AD2FEFE7A212A2DED08964AB8CC /* Sources */,
+				F358BD55614AC2240A3261A44431C2EF /* Frameworks */,
+				4227F5F94CAD14714D4305C394F9C860 /* Resources */,
+				8CA7D2398AB08FFF4668AD48B44FB6A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F3080C2928ED0368A245D0E4F8FC12A /* PBXTargetDependency */,
+			);
+			name = SlidingTabbarController;
+			productName = SlidingTabbarController;
+			productReference = 78FD61D699132AADF7BF05A5052D210B /* SlidingTabbarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2039E7AB3CFC348AF1E69E13F8A2A35 /* Pods-SlidingTabbarController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE05A467229E3A66F4159BEF1C3D8D8 /* Build configuration list for PBXNativeTarget "Pods-SlidingTabbarController_Example" */;
+			buildPhases = (
+				ED40BCC39714072D42AD99258A2AAE10 /* Sources */,
+				4C0D6CBFEA835260C8C6C95110F15AE0 /* Frameworks */,
+				DC1EAFCCC3F6F24468665BA32012B119 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F3678900D30638B5B7799C1819291F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-SlidingTabbarController_Example";
+			productName = "Pods-SlidingTabbarController_Example";
+			productReference = C266CB2D6755113B001892BF1D30CCDD /* Pods_SlidingTabbarController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAF8672401A379FC173DFF5F2AD59FF2 /* Pods-SlidingTabbarController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91179AAA5D9C6CA64634A483F13D85B4 /* Build configuration list for PBXNativeTarget "Pods-SlidingTabbarController_Tests" */;
+			buildPhases = (
+				631742705E2F804311838D3765DDBEB2 /* Sources */,
+				1A3B2D67C85B108640BDBADCB2CEF7FC /* Frameworks */,
+				7380ADBE7ED8745B3D37CBD1D757D5E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15FF5A6981A4CA19CC817A35766D9D0E /* PBXTargetDependency */,
+			);
+			name = "Pods-SlidingTabbarController_Tests";
+			productName = "Pods-SlidingTabbarController_Tests";
+			productReference = 39AAF79B182AC4B02E07157968F6C593 /* Pods_SlidingTabbarController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 39438CD10B72BBC8C6FC486441FC160E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2039E7AB3CFC348AF1E69E13F8A2A35 /* Pods-SlidingTabbarController_Example */,
+				EAF8672401A379FC173DFF5F2AD59FF2 /* Pods-SlidingTabbarController_Tests */,
+				94B9D5C0BF78B57EB7536F4EF0F0ACAE /* SlidingTabbarController */,
+				908B94CDF2D512089C21180B796720A9 /* SlidingTabbarController-SlidingTabbarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4227F5F94CAD14714D4305C394F9C860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA514AFCD55DA27ABB68A06F83751C0 /* SlidingTabbarController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6AFC8B7E348D3F08BDCBB29BF28F6A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		631742705E2F804311838D3765DDBEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56872A9D2DC167A9AD4B0193F4EB1E0 /* Pods-SlidingTabbarController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD02AF59E4477B077A75FAE2195661E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85A5AD2FEFE7A212A2DED08964AB8CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEAE74EF1C819FF800E4E94C /* SlidingTabbarItemView.swift in Sources */,
+				AEAE74F11C81A0BE00E4E94C /* SlidingTabbarItem.swift in Sources */,
+				AEAE74EE1C819FF600E4E94C /* SlidingTabbar.swift in Sources */,
+				B22C19DD44DFA6298B634B29F96FCCE0 /* ReplaceMe.swift in Sources */,
+				9D6101C9115EF96DFB9B3AC5459477AA /* SlidingTabbarController-dummy.m in Sources */,
+				AEAE74ED1C819FF100E4E94C /* SlidingTabbarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED40BCC39714072D42AD99258A2AAE10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B6A9B4A526FF4EB64E5C6EB97E90C5 /* Pods-SlidingTabbarController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15FF5A6981A4CA19CC817A35766D9D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlidingTabbarController;
+			target = 94B9D5C0BF78B57EB7536F4EF0F0ACAE /* SlidingTabbarController */;
+			targetProxy = F1B8CDC918958A0721A53DFF0164BA5D /* PBXContainerItemProxy */;
+		};
+		4F3080C2928ED0368A245D0E4F8FC12A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SlidingTabbarController-SlidingTabbarController";
+			target = 908B94CDF2D512089C21180B796720A9 /* SlidingTabbarController-SlidingTabbarController */;
+			targetProxy = 3875B78C521882A964F5D33653602C3B /* PBXContainerItemProxy */;
+		};
+		7F3678900D30638B5B7799C1819291F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlidingTabbarController;
+			target = 94B9D5C0BF78B57EB7536F4EF0F0ACAE /* SlidingTabbarController */;
+			targetProxy = 0433932120A44F2314331E7EACE71AF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		79C2607BF68B30264E4E6BF0A895AB72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1E63F743980EDBBD00240BEB9EB0EF /* SlidingTabbarController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SlidingTabbarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		91BCC3F10C0C03FAE030832292C5C383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1E63F743980EDBBD00240BEB9EB0EF /* SlidingTabbarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlidingTabbarController/SlidingTabbarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlidingTabbarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlidingTabbarController/SlidingTabbarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SlidingTabbarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E17D03800FDF1A1EA6776727BC485E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F9A5216865E97206BE8785BD2546C04 /* Pods-SlidingTabbarController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlidingTabbarController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlidingTabbarController_Tests/Pods-SlidingTabbarController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SlidingTabbarController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0EE789FF4ADD84F1C69B404D21984B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1E63F743980EDBBD00240BEB9EB0EF /* SlidingTabbarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlidingTabbarController/SlidingTabbarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlidingTabbarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlidingTabbarController/SlidingTabbarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SlidingTabbarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A85DD9476437EA9EFA79B3F2CFB364CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C45F65269F1CD20684A5DFC0CF1587D /* Pods-SlidingTabbarController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlidingTabbarController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlidingTabbarController_Tests/Pods-SlidingTabbarController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SlidingTabbarController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A911EE55E628619E0070422574CF970C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F394190965D9C59A9065C5E3B12631 /* Pods-SlidingTabbarController_Example.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlidingTabbarController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlidingTabbarController_Example/Pods-SlidingTabbarController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SlidingTabbarController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE6FBC566DC9D7F64C1F3007F73D0B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73EDA4D0D23A8BF5D0497CE580647E1B /* Pods-SlidingTabbarController_Example.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SlidingTabbarController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlidingTabbarController_Example/Pods-SlidingTabbarController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SlidingTabbarController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2E22B6135FCD0D627E7F716539C836E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1E63F743980EDBBD00240BEB9EB0EF /* SlidingTabbarController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SlidingTabbarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A99ED99B489A958E0931AA7B84FF252 /* Build configuration list for PBXNativeTarget "SlidingTabbarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0EE789FF4ADD84F1C69B404D21984B8 /* Debug */,
+				91BCC3F10C0C03FAE030832292C5C383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91179AAA5D9C6CA64634A483F13D85B4 /* Build configuration list for PBXNativeTarget "Pods-SlidingTabbarController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E17D03800FDF1A1EA6776727BC485E0 /* Debug */,
+				A85DD9476437EA9EFA79B3F2CFB364CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E46088ED0E806B5F030500DDE9144A /* Build configuration list for PBXNativeTarget "SlidingTabbarController-SlidingTabbarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C2607BF68B30264E4E6BF0A895AB72 /* Debug */,
+				F2E22B6135FCD0D627E7F716539C836E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE05A467229E3A66F4159BEF1C3D8D8 /* Build configuration list for PBXNativeTarget "Pods-SlidingTabbarController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6FBC566DC9D7F64C1F3007F73D0B5A /* Debug */,
+				A911EE55E628619E0070422574CF970C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
