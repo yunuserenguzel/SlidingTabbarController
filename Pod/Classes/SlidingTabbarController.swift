@@ -13,8 +13,6 @@ internal protocol SlidingTabbarDelegate {
   func tabbarItemViewTitleColor() -> UIColor
 }
 
-
-
 public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
   public let tabbar = SlidingTabbar()
   public var items: [SlidingTabbarItem]? {

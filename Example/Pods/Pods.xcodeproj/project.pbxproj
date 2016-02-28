@@ -18,7 +18,6 @@
 		AEAE74EE1C819FF600E4E94C /* SlidingTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE74E51C819E5000E4E94C /* SlidingTabbar.swift */; };
 		AEAE74EF1C819FF800E4E94C /* SlidingTabbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE74E71C819E7800E4E94C /* SlidingTabbarItemView.swift */; };
 		AEAE74F11C81A0BE00E4E94C /* SlidingTabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE74F01C81A0BE00E4E94C /* SlidingTabbarItem.swift */; };
-		B22C19DD44DFA6298B634B29F96FCCE0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5904DCF89FB7B9EBE24E5FCA1B4ADA8 /* ReplaceMe.swift */; };
 		BFA514AFCD55DA27ABB68A06F83751C0 /* SlidingTabbarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76BD36D324B0370213B4188D683B464F /* SlidingTabbarController.bundle */; };
 		E56872A9D2DC167A9AD4B0193F4EB1E0 /* Pods-SlidingTabbarController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3C32591F143BB588B3984FED7583A6 /* Pods-SlidingTabbarController_Tests-dummy.m */; };
 		F6B192B78A1404D582E86C4F1B6688CE /* SlidingTabbarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D331F730372202F8A3B873CF22F4CBAA /* SlidingTabbarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,7 +80,6 @@
 		D331F730372202F8A3B873CF22F4CBAA /* SlidingTabbarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlidingTabbarController-umbrella.h"; sourceTree = "<group>"; };
 		D558331CCC9F84483C9AF07ECDDE2AFB /* SlidingTabbarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SlidingTabbarController.modulemap; sourceTree = "<group>"; };
 		DE3C32591F143BB588B3984FED7583A6 /* Pods-SlidingTabbarController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlidingTabbarController_Tests-dummy.m"; sourceTree = "<group>"; };
-		E5904DCF89FB7B9EBE24E5FCA1B4ADA8 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		EE1E63F743980EDBBD00240BEB9EB0EF /* SlidingTabbarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlidingTabbarController.xcconfig; sourceTree = "<group>"; };
 		EF40AF2125A383CC8393046783DCD6B4 /* Pods-SlidingTabbarController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlidingTabbarController_Example-dummy.m"; sourceTree = "<group>"; };
 		F33E929081910D063DA9107CAC916E4D /* Pods-SlidingTabbarController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlidingTabbarController_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 		B36B34A1F5B16C9E076BA166F5F586F1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E5904DCF89FB7B9EBE24E5FCA1B4ADA8 /* ReplaceMe.swift */,
 				AEAE74F01C81A0BE00E4E94C /* SlidingTabbarItem.swift */,
 				AEAE74E31C819E1600E4E94C /* SlidingTabbarController.swift */,
 				AEAE74E51C819E5000E4E94C /* SlidingTabbar.swift */,
@@ -430,7 +427,6 @@
 				AEAE74EF1C819FF800E4E94C /* SlidingTabbarItemView.swift in Sources */,
 				AEAE74F11C81A0BE00E4E94C /* SlidingTabbarItem.swift in Sources */,
 				AEAE74EE1C819FF600E4E94C /* SlidingTabbar.swift in Sources */,
-				B22C19DD44DFA6298B634B29F96FCCE0 /* ReplaceMe.swift in Sources */,
 				9D6101C9115EF96DFB9B3AC5459477AA /* SlidingTabbarController-dummy.m in Sources */,
 				AEAE74ED1C819FF100E4E94C /* SlidingTabbarController.swift in Sources */,
 			);
