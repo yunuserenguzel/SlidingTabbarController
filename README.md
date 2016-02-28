@@ -1,29 +1,62 @@
 # SlidingTabbarController
+Scrollable SlidingTabbarController for iOS
 
-[![CI Status](http://img.shields.io/travis/Yunus Eren Guzel/SlidingTabbarController.svg?style=flat)](https://travis-ci.org/Yunus Eren Guzel/SlidingTabbarController)
-[![Version](https://img.shields.io/cocoapods/v/SlidingTabbarController.svg?style=flat)](http://cocoapods.org/pods/SlidingTabbarController)
-[![License](https://img.shields.io/cocoapods/l/SlidingTabbarController.svg?style=flat)](http://cocoapods.org/pods/SlidingTabbarController)
-[![Platform](https://img.shields.io/cocoapods/p/SlidingTabbarController.svg?style=flat)](http://cocoapods.org/pods/SlidingTabbarController)
+Are you limited to UITabbar's item count?
+Do you want to impress your customers?
 
-## Usage
+Don't restrict your app to use side menu when you have too many menu items.
+Use SlidingTabbarController to have smart tab bar on your apps.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![demo](https://github.com/yunuserenguzel/sliding-tabbar-controller/blob/master/sliding_tabbar_demo.gif)
 
-## Requirements
+## How to use
 
-## Installation
+Using SlidingTabbarController is easy. Copy SlidingTabbarController.swift into your project. 
 
-SlidingTabbarController is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "SlidingTabbarController"
+* Go to applicationDidFinishLaunchingWithOptions method inside your project's AppDelegate
+```Swift
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+  
+  ...
+  
+  return true
+}
 ```
 
-## Author
+* Create a SlidingTabbarController instance,
+```Swift
+let slidingTabbarController = SlidingTabbarController()
+```
 
-Yunus Eren Guzel, exculuber@gmail.com
+* Set the items
+```Swift
+slidingTabbarController.items = [
+  SlidingTabbarItem(image: UIImage(named: "alligator")!,
+    highlightedImage: UIImage(named: "alligator_filled")!,
+    title: "Alligator",
+    controller: ViewController(imageName: "alligator_large")),
+  SlidingTabbarItem(image: UIImage(named: "bird")!,
+    highlightedImage: UIImage(named: "bird_filled")!,
+    title: "Bird",
+    controller: ViewController(imageName: "bird_large"))
+  ]
+```
 
-## License
+* Create a window and make SlidingTabbarController be window's rootViewController
+```Swift
+window = UIWindow(frame: UIScreen.mainScreen().bounds)
+window!.makeKeyAndVisible()
+window!.rootViewController = slidingTabbarController
+```
+That is it!
 
-SlidingTabbarController is available under the MIT license. See the LICENSE file for more info.
+#### What is SlidingTabbarItem?
+SlidingTabbarItem consists of three major elements an image, a title and a controller. Image and title are for showing the corresponding button on the tabbar for the controller. Also, there is highlightedImage to indicate which controller is selected and shown on the screen.
+
+```Swift
+var slidingTabbarItem = SlidingTabbarItem()
+item.image = UIImage(named: "show_me_when_passive")
+item.highlightedImage = UIImage(named: "show_me_when_active")
+item.title = "describe_the_controller"
+item.controller = UIViewController() //the content you want to show
+```
