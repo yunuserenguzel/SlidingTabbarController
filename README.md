@@ -9,9 +9,39 @@ Use SlidingTabbarController to have smart tab bar on your apps.
 
 ![demo](https://github.com/yunuserenguzel/sliding-tabbar-controller/blob/master/sliding_tabbar_demo.gif)
 
+## Installation
+
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate SlidingTabbarController into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'SlidingTabbarController'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+### Manually
+
+If you don't want to use CocoaPods you can manually add SlidingTabbarController to your project. Copy swift classes inside Pod/Classes folder and add to your XCode project.
+
 ## How to use
 
-Using SlidingTabbarController is easy. Copy SlidingTabbarController.swift into your project. 
+Using SlidingTabbarController is easy. 
 
 * Go to applicationDidFinishLaunchingWithOptions method inside your project's AppDelegate
 ```Swift
