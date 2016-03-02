@@ -90,3 +90,25 @@ item.highlightedImage = UIImage(named: "show_me_when_active")
 item.title = "describe_the_controller"
 item.controller = UIViewController() //the content you want to show
 ```
+
+#### Using with UIStoryboard
+SlidingTabbarController can be used with storyboard controllers by [instantiating controllers](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIStoryboard_Class/index.html#//apple_ref/occ/instm/UIStoryboard/instantiateViewControllerWithIdentifier:) from storyboard.
+```Swift
+let storyboard = UIStoryboard(name: "Storyboard_Name", bundle: bundleObject)
+let controller = storyboard.instantiateViewControllerWithIdentifier("view_controller_identifier")!
+```
+
+Than use this controller with SlidingTabbarItem
+
+```Swift
+slidingTabbarController.items = [
+  SlidingTabbarItem(image: UIImage(named: "image_name")!,
+    highlightedImage: UIImage(named: "image_name")!,
+    title: "An Item",
+    controller: controller),
+    
+    ...
+    
+  ]
+```
+
