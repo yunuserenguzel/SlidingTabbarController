@@ -22,20 +22,19 @@ public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
   }
   public var selectedIndex: Int = 0 {
     didSet {
-      replaceViewController(viewControllerAtIndex(oldValue), newController: viewControllerAtIndex(selectedIndex))
+      replaceViewController(currentController: viewControllerAtIndex(index: oldValue), newController: viewControllerAtIndex(index: selectedIndex))
     }
   }
   public var tabbarHeight: CGFloat = 49 {
     didSet {
-      guard isViewLoaded() else { return }
+      guard isViewLoaded else { return }
       view.constraints.forEach {
-        guard let view = $0.firstItem as? UIView
-          where view == tabbar && $0.firstAttribute == .Height else { return }
+        guard let view = $0.firstItem as? UIView, view == tabbar && $0.firstAttribute == .height else { return }
         $0.constant = tabbarHeight
       }
     }
   }
-  public var tabbarTitleColor: UIColor = UIColor.blackColor() {
+  public var tabbarTitleColor: UIColor = UIColor.black {
     didSet {
       tabbar.views?.forEach { $0.titleLabel.textColor = tabbarTitleColor }
     }
@@ -43,7 +42,7 @@ public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
   private let container = UIView()
   
   private func configureViews() {
-    guard let items = items where isViewLoaded() else { return }
+    guard let items = items, isViewLoaded else { return }
     tabbar.items = items
     selectedIndex = 0
   }
@@ -66,16 +65,16 @@ public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
     ]
     let metrics = ["tabbarHeight": tabbarHeight]
     view.addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("H:|[tabbar]|", options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: "H:|[tabbar]|", options: [], metrics: nil, views: views))
     view.addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("H:|[container]|", options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: "H:|[container]|", options: [], metrics: nil, views: views))
     view.addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("V:|[container][tabbar(tabbarHeight)]|", options: [], metrics: metrics, views: views))
+      .constraints(withVisualFormat: "V:|[container][tabbar(tabbarHeight)]|", options: [], metrics: metrics, views: views))
   }
   
   private func replaceViewController(currentController: UIViewController?, newController: UIViewController?) {
     guard let newController = newController else { return }
-    currentController?.willMoveToParentViewController(nil)
+    currentController?.willMove(toParentViewController: nil)
     container.removeConstraints(container.constraints)
     currentController?.view.removeFromSuperview()
     currentController?.removeFromParentViewController()
@@ -85,15 +84,15 @@ public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
     
     let views = [ "view": newController.view ]
     container.addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("H:|[view]|", options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: "H:|[view]|", options: [], metrics: nil, views: views))
     container.addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("V:|[view]|", options: [], metrics: nil, views: views))
-    newController.didMoveToParentViewController(self)
+      .constraints(withVisualFormat: "V:|[view]|", options: [], metrics: nil, views: views))
+    newController.didMove(toParentViewController: self)
     
   }
   
   public func viewControllerAtIndex(index: Int) -> UIViewController? {
-    guard let items = items where index >= 0 && index < items.count else { return nil }
+    guard let items = items, index >= 0 && index < items.count else { return nil }
     return items[index].controller
   }
   

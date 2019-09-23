@@ -26,22 +26,22 @@ internal class SlidingTabbarItemView: UIView {
   }
   var selected: Bool = false {
     didSet {
-      imageView.highlighted = selected
+      imageView.isHighlighted = selected
     }
   }
   let imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
     imageView.clipsToBounds = true
-    imageView.contentMode = .Center
+    imageView.contentMode = .center
     return imageView
   }()
   let titleLabel: UILabel = {
     let titleLabel = UILabel()
     titleLabel.translatesAutoresizingMaskIntoConstraints = false
-    titleLabel.font = UIFont.systemFontOfSize(10)
-    titleLabel.textColor = UIColor.blackColor()
-    titleLabel.textAlignment = .Center
+    titleLabel.font = UIFont.systemFont(ofSize: 10)
+    titleLabel.textColor = UIColor.black
+    titleLabel.textAlignment = .center
     return titleLabel
   }()
   
@@ -63,11 +63,11 @@ internal class SlidingTabbarItemView: UIView {
       "titleLabel": titleLabel
     ]
     addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("H:[imageView]", options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: "H:[imageView]", options: [], metrics: nil, views: views))
     addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("H:|[titleLabel]|", options: [], metrics: nil, views: views))
-    addConstraint(NSLayoutConstraint(item: imageView, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1, constant: 0))
+      .constraints(withVisualFormat: "H:|[titleLabel]|", options: [], metrics: nil, views: views))
+    addConstraint(NSLayoutConstraint(item: imageView, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0))
     addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("V:|[imageView][titleLabel]-3-|", options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: "V:|[imageView][titleLabel]-3-|", options: [], metrics: nil, views: views))
   }
 }

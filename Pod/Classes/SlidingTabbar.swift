@@ -51,7 +51,7 @@ public class SlidingTabbar: UIView, UIScrollViewDelegate {
     addSubview(scrollView)
     
     topBorder.translatesAutoresizingMaskIntoConstraints = false
-    topBorder.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.10)
+    topBorder.backgroundColor = UIColor.black.withAlphaComponent(0.10)
     addSubview(topBorder)
     let views = [
       "scroll": scrollView,
@@ -59,21 +59,21 @@ public class SlidingTabbar: UIView, UIScrollViewDelegate {
       "topBorder": topBorder
     ]
     addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("H:|[scroll(view)]|", options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: "H:|[scroll(view)]|", options: [], metrics: nil, views: views))
     addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("V:|[scroll(view)]|", options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: "V:|[scroll(view)]|", options: [], metrics: nil, views: views))
     addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("H:|[topBorder]|", options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: "H:|[topBorder]|", options: [], metrics: nil, views: views))
     addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat("V:|[topBorder(1)]", options: [], metrics: nil, views: views))
-    backgroundColor = UIColor.whiteColor()
+      .constraints(withVisualFormat: "V:|[topBorder(1)]", options: [], metrics: nil, views: views))
+    backgroundColor = UIColor.white
   }
   
   private func configureViews() {
     views = items.map {
       let view = SlidingTabbarItemView()
       view.translatesAutoresizingMaskIntoConstraints = false
-      view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "selectItem:"))
+      view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectItem)))
       view.image = $0.image
       view.highlightImage = $0.highlightedImage
       view.title = $0.title
@@ -86,12 +86,15 @@ public class SlidingTabbar: UIView, UIScrollViewDelegate {
     views?.first?.selected = true
   }
   
-  func selectItem(tapGesture: UITapGestureRecognizer) {
-    guard let views = views, itemView = tapGesture.view as? SlidingTabbarItemView, index = views.indexOf(itemView) else { return }
+  @objc func selectItem(tapGesture: UITapGestureRecognizer) {
+    guard let views = views,
+      let itemView = tapGesture.view as? SlidingTabbarItemView,
+      let index = views.index(of: itemView) else { return }
     views.forEach { $0.selected = false }
     itemView.selected = true
-    tabbarDelegate?.itemSelected(index)
-    UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.8, options: .CurveEaseInOut, animations: {
+    tabbarDelegate?.itemSelected(index: index)
+    
+    UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
       var x = itemView.center.x - self.scrollView.frame.width * 0.5
       x = min(self.scrollView.contentSize.width - self.scrollView.frame.width, x)
       self.scrollView.contentOffset = CGPoint(x: max(x, 0), y:0)
@@ -106,15 +109,15 @@ public class SlidingTabbar: UIView, UIScrollViewDelegate {
     var views: [String: UIView] = ["scrollView": scrollView]
     var horizontalFormat = "H:|"
     self.views!.forEach {
-      let key = "item\(self.views!.indexOf($0)!)"
+      let key = "item\(self.views!.index(of: $0)!)"
       views[key] = $0
       horizontalFormat += "[\(key)(\(size.width))]-0-"
       scrollView.addConstraints(NSLayoutConstraint
-        .constraintsWithVisualFormat("V:|[\(key)(==scrollView)]|", options: [], metrics: nil, views: views))
+        .constraints(withVisualFormat: "V:|[\(key)(==scrollView)]|", options: [], metrics: nil, views: views))
     }
     horizontalFormat += "|"
     scrollView.addConstraints(NSLayoutConstraint
-      .constraintsWithVisualFormat(horizontalFormat, options: [], metrics: nil, views: views))
+      .constraints(withVisualFormat: horizontalFormat, options: [], metrics: nil, views: views))
   }
   
 }
