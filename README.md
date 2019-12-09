@@ -7,7 +7,7 @@ Do you want to impress your customers?
 Don't restrict your app to use side menu when you have too many menu items.
 Use SlidingTabbarController to have smart tab bar on your apps.
 
-![demo](https://github.com/yunuserenguzel/sliding-tabbar-controller/blob/master/sliding_tabbar_demo.gif)
+![demo](https://github.com/yunuserenguzel/sliding-tabbar-controller/blob/master/slidingtabbar.gif)
 
 ## Installation
 

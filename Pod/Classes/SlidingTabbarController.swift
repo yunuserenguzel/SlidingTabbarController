@@ -39,7 +39,11 @@ public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
       tabbar.views?.forEach { $0.titleLabel.textColor = tabbarTitleColor }
     }
   }
-  private let container = UIView()
+  private let container: UIView = {
+    let view = UIView()
+    view.backgroundColor = .white
+    return view
+  }()
   
   private func configureViews() {
     guard let items = items, isViewLoaded else { return }
@@ -49,6 +53,9 @@ public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
   
   override public func viewDidLoad() {
     super.viewDidLoad()
+    
+    
+    self.view.backgroundColor = .white
     tabbar.tabbarDelegate = self
     container.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(container)
@@ -59,17 +66,18 @@ public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
   }
   
   private func applyConstraints() {
-    let views = [
+    let views: [String : Any] = [
       "container": container,
-      "tabbar": tabbar
-    ]
+      "tabbar": tabbar,
+      "bottom": bottomLayoutGuide
+      ]
     let metrics = ["tabbarHeight": tabbarHeight]
     view.addConstraints(NSLayoutConstraint
       .constraints(withVisualFormat: "H:|[tabbar]|", options: [], metrics: nil, views: views))
     view.addConstraints(NSLayoutConstraint
       .constraints(withVisualFormat: "H:|[container]|", options: [], metrics: nil, views: views))
     view.addConstraints(NSLayoutConstraint
-      .constraints(withVisualFormat: "V:|[container][tabbar(tabbarHeight)]|", options: [], metrics: metrics, views: views))
+      .constraints(withVisualFormat: "V:|[container][tabbar(tabbarHeight)][bottom]", options: [], metrics: metrics, views: views))
   }
   
   private func replaceViewController(currentController: UIViewController?, newController: UIViewController?) {
@@ -82,7 +90,7 @@ public class SlidingTabbarController: UIViewController, SlidingTabbarDelegate {
     newController.view.translatesAutoresizingMaskIntoConstraints = false
     container.addSubview(newController.view)
     
-    let views = [ "view": newController.view ]
+    let views: [String: Any] = [ "view": newController.view ]
     container.addConstraints(NSLayoutConstraint
       .constraints(withVisualFormat: "H:|[view]|", options: [], metrics: nil, views: views))
     container.addConstraints(NSLayoutConstraint
